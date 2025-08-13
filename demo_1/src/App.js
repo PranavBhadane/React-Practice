@@ -1,0 +1,50 @@
+import './App.css';
+import { ColourListComponent } from './ColourListComponent.js';
+import HeaderComponent from './Function/HeaderComp.js';
+import { ConditionalStatement } from './Function/ConditionalTwo.js';
+import { NestedFunction } from './NestedFuc.js';
+import { CondtionalOne } from './Function/ConditionalOne.js';
+import MyFirst from './ClassComponents/myFirstCC.js';
+import HellowLostDemoComp from './ClassComponents/HelloListDemoComp.js';
+import ConditionalRendering from './ClassComponents/ConditionalRendering.js';
+import ConditionalLogical from './ClassComponents/ConditionalLogical.js';
+import StateChangeLC from './ClassComponents/StateChangeLC.js';
+import StateDemoFirstCC from './ClassComponents/StateDemoFirstCC.js';
+
+
+
+function App() {
+
+  let lang=[
+    {name:"JavaScript", id:1},
+    {name:"Python", id:2},
+    {name:"Java", id:3},
+    {name:"C++", id:4},
+    {name:"C#", id:5},
+    {name:"PHP", id:6}
+  ]
+
+  return (
+    <div className="App">
+       {/* <HeaderComponent/> */}
+      <header className="App-header">
+       {/* <NestedFunction/> */}
+       <hr style={{ width: "80%", border: "1px solid white", margin: "20px 0" }} />
+       <ColourListComponent/>
+       <hr style={{width:"80%", border:"1px solid white", margin:"20px 0" }}/>
+       <h2>Conditional Statement Example</h2>
+       {/* <ConditionalStatement/>
+       <CondtionalOne favlang="Python" num={10}/> */}
+       <MyFirst/>
+       {/* <HellowLostDemoComp languages={lang}/> */}
+       {/* <ConditionalRendering technology="React"/>
+       <ConditionalLogical favlang="JavaScript"/>
+       <StateChangeLC/> */}
+       <StateDemoFirstCC/>
+      </header>
+    </div>
+    
+  );
+}
+
+export default App;
