@@ -12,6 +12,12 @@ import StateChangeLC from './ClassComponents/StateChangeLC.js';
 import StateDemoFirstCC from './ClassComponents/StateDemoFirstCC.js';
 import { DemoComponent } from './ClassComponents/DemoComponent.js';
 import ConditionalIf from './ClassComponents/Conditional_if_CC.js';
+import MessageComponent from './ClassComponents/Sharper_1.js';
+import { FcInlineStyleComponent } from './StylingDemos/FcInline.js';
+import ClassComponentInline from './StylingDemos/ClassCompInline.js';
+import DemoCSSModule from './StylingDemos/demo.js';
+import usingExternalCss from './StylingDemos/UsingExternal.js';
+import UsingExternalCss from './StylingDemos/UsingExternal.js';
 
 
 
@@ -35,23 +41,30 @@ function App() {
 
   return (
     <div className="App">
-       {/* <HeaderComponent/> */}
+       <HeaderComponent/>
       <header className="App-header">
        {/* <NestedFunction/> */}
-       <hr style={{ width: "80%", border: "1px solid white", margin: "20px 0" }} />
-       <ColourListComponent/>
+       {/* <hr style={{ width: "80%", border: "1px solid white", margin: "20px 0" }} /> */}
+       {/* <ColourListComponent/> */}
        <hr style={{width:"80%", border:"1px solid white", margin:"20px 0" }}/>
-       <h2>Conditional Statement Example</h2>
+       {/* <h2>Conditional Statement Example</h2> */}
        {/* <ConditionalStatement/>
        <CondtionalOne favlang="Python" num={10}/> */}
-       <MyFirst/>
+       {/* <MyFirst/> */}
        {/* <HellowLostDemoComp languages={lang}/> */}
        {/* <ConditionalRendering technology="React"/>
        <ConditionalLogical favlang="JavaScript"/>
        <StateChangeLC/> */}
-       <StateDemoFirstCC/>
+       {/* <StateDemoFirstCC/>
        <DemoComponent depinfo={depinfo}/>
        <ConditionalIf/>
+       <MessageComponent/> */}
+       {/* <FcInlineStyleComponent/>
+        <hr style={{ width: "80%", border: "1px solid white", margin: "20px 0" }} />
+        <ClassComponentInline/>
+        <DemoCSSModule/> */}
+        <UsingExternalCss/>
+
       </header>
     </div>
     
