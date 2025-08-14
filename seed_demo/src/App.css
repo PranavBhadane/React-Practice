@@ -1,0 +1,120 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #d9afd9, #97d9e1);
+  color: #333;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+
+.App {
+  max-width: 900px;
+  margin: auto;
+}
+
+
+h1, h2 {
+  font-weight: 600;
+}
+
+
+p {
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+
+header {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0px 4px 25px rgba(0,0,0,0.1);
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+
+section {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 25px rgba(0,0,0,0.08);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+details {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 15px;
+  transition: transform 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+details:hover {
+  transform: translateY(-2px);
+}
+
+
+summary {
+  padding: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.15);
+  user-select: none;
+  transition: background 0.3s ease;
+}
+
+summary:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+
+.course-details {
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+
+/* Remove default arrow in Firefox */
+summary {
+  list-style: none;
+}
+
+
+summary::after {
+  content: " ▼";
+  font-size: 14px;
+  color: #444;
+  transition: transform 0.3s ease;
+}
+
+details[open] summary::after {
+  content: " ▲";
+}
+
+html {
+  overflow-y: scroll; /* Force vertical scrollbar always */
+}
