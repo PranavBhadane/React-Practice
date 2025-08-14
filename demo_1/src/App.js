@@ -10,6 +10,8 @@ import ConditionalRendering from './ClassComponents/ConditionalRendering.js';
 import ConditionalLogical from './ClassComponents/ConditionalLogical.js';
 import StateChangeLC from './ClassComponents/StateChangeLC.js';
 import StateDemoFirstCC from './ClassComponents/StateDemoFirstCC.js';
+import { DemoComponent } from './ClassComponents/DemoComponent.js';
+import ConditionalIf from './ClassComponents/Conditional_if_CC.js';
 
 
 
@@ -23,6 +25,13 @@ function App() {
     {name:"C#", id:5},
     {name:"PHP", id:6}
   ]
+
+  let depinfo = {
+    deptCode: "CS101",
+    deptName: "Computer Science",
+    deptLocation: "Building A",
+    deptHead: "Dr. Smith"
+  }
 
   return (
     <div className="App">
@@ -41,6 +50,8 @@ function App() {
        <ConditionalLogical favlang="JavaScript"/>
        <StateChangeLC/> */}
        <StateDemoFirstCC/>
+       <DemoComponent depinfo={depinfo}/>
+       <ConditionalIf/>
       </header>
     </div>
     
