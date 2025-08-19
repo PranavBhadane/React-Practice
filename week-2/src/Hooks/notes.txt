@@ -1,0 +1,10 @@
+const[click,setClick]= useState(0);
+
+click - it's an veriable
+useState(0) - anything in the "( )" is assigned to the veriable
+setClick - its an function to call click.
+
+
+useEffect(<Function>,<Dependency>)
+Function- Code to be executed when useEffect triggers
+Dependency - optional prarameter

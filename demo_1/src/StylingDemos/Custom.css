@@ -1,33 +1,13 @@
-/* Styling for the paragraph */
-p {
-    color: #333; /* Dark gray text */
-    background-color: #f9f9f9; /* Light gray background */
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    padding: 10px;
-    border-radius: 5px; /* Slightly rounded corners */
-    margin: 10px 0;
-    line-height: 1.5; /* Better readability */
-    border: 1px solid #ddd; /* Subtle border */
-}
-
-/* Styling for the div container */
-div {
-    background-color: #fff; /* White background */
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
-    max-width: 500px;
-    margin: 20px auto; /* Center the div */
-    text-align: left;
-    border: 1px solid #ccc; /* Light border */
-}
-
-/* Styling for the heading */
-h3 {
-    color: #444; /* Darker gray for the heading */
-    font-family: Arial, sans-serif;
+p{
+    colour: rgb(204, 29, 85);
+    background-color: rgb(29, 154, 204);
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
-    text-align: center;
-    margin-bottom: 10px;
+    text-decoration: underline;
+
+}
+
+div{
+
 }

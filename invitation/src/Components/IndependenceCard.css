@@ -1,0 +1,119 @@
+/* ===== Base ===== */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Card ===== */
+.card {
+  position: relative;
+  background: #fff;
+  padding: 20px 20px 12px;   /* reduced top & bottom padding */
+  width: 420px;
+  text-align: center;
+  border-radius: 16px;
+  border: 3px solid transparent;
+  background-image:
+    linear-gradient(#fff, #fff),
+    linear-gradient(90deg, #ff9933, #ffffff, #138808);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+/* ===== Top Waves (behind content) ===== */
+.wave {
+  position: absolute;
+  left: -60px;
+  right: -60px;
+  height: 70px;
+  border-radius: 50%;
+  opacity: 0.45;
+  z-index: 0;                         /* stay behind */
+}
+.wave-orange { top: -62px; background: #ff9933; }
+.wave-white  { top: -42px; background: #ffffff; }
+.wave-green  { top: -22px; background: #138808; }
+
+/* Keep all content above waves */
+.happy, .message, .details, .taj, .closing { position: relative; z-index: 1; }
+
+/* ===== Headings & Text ===== */
+.happy {
+  color: #ff6a00;
+  font-size: 24px;
+  margin: 10px 0 8px;                 /* reduced top gap */
+  font-weight: 700;
+}
+
+.message {
+  font-size: 15px;
+  color: #333;
+  margin: 6px 0 10px;
+  line-height: 1.5;
+}
+
+.tagline {
+  font-size: 16px;
+  font-style: italic;
+  color: #2e7d32;
+}
+
+/* ===== Details Box ===== */
+.details {
+  background: #f9fbe7;
+  padding: 12px;
+  border-radius: 10px;
+  margin: 10px 0 8px;
+  font-size: 14px;
+  line-height: 1.55;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.details p { margin: 5px 0;
+display : flex;
+  align-items: center; 
+  justify-content: flex-start;
+}
+.emoji { margin-right: 6px; }
+
+.taj {
+  margin-top: 0;              /* remove gap above Taj */
+  position: relative;
+  display: inline-block;
+}
+.taj-img {
+  width: 100%;
+  display: block;
+}
+
+/* Keep your tuned flag position (adjust if needed) */
+.flag {
+  position: absolute;
+  top: 150px;
+  left: 57.5%;
+  transform: translateX(-50%);
+  width: 42px;
+}
+
+/* ===== Closing line ===== */
+.closing {
+  margin-top: 8px;            /* smaller gap under Taj */
+  font-size: 15px;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
