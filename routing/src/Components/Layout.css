@@ -1,0 +1,106 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light gray background for the entire app */
+    color: #333; /* Dark gray text for better readability */
+    line-height: 1.6;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #0078d4; /* Blue background for the navbar */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+nav a {
+    color: white; /* White text for links */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #005a9e; /* Darker blue on hover */
+    color: #f4f4f9; /* Light gray text on hover */
+}
+
+nav .active {
+    background-color: #005a9e; /* Highlight active link */
+    color: #f4f4f9;
+}
+
+/* Page container styling */
+div {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for content boxes */
+}
+
+/* Headings styling */
+h1, h2, h3 {
+    color: #0078d4; /* Blue headings for consistency */
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+/* Button styling */
+button {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005a9e;
+}
+
+/* Links inside content */
+a {
+    color: #0078d4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #005a9e;
+}
+
+/* Footer styling */
+footer {
+    background-color: #0078d4;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,13 @@
+Browser Router:
+uses the html5 history api to keep your UI in sync with the Url.
+(BrowserRouter) is used as the root component for routing.
+
+Routes and Route:
+1. Routes: It wraps all route definitions
+2. Route: Defines a single route with a path and the component to render.
+
+Link and NavLink:
+1. Link: Creates navigational links in the application.
+2. NavLink: Same as Link but provides additional styling attributes when the link is active.
+
+<outlet> -Acts as the a placeholder to render the componenet mapped to the navigation path.
